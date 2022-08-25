@@ -6,12 +6,21 @@
 Основной стек:
 
 Python
+
 Pandas
+
 Matplotlib
+
 NumPy
+
 SciPy
+
 Seaborn
+
 Pingouin
+
 Bootstrap
+
 описательная статистика
+
 проверка статистических гипотез
