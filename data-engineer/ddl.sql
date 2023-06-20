@@ -6,9 +6,9 @@ drop table if exists public.shipping_status;
 
 
 CREATE TABLE public.shipping_country_rates(
-   id           					serial,
+   id           					   serial,
    shipping_country      			text,
-   shipping_country_base_rate       NUMERIC(14,3),
+   shipping_country_base_rate    NUMERIC(14,3),
    PRIMARY KEY (id)
 );
 
@@ -21,7 +21,7 @@ CREATE TABLE public.shipping_agreement (
 );
 
 CREATE TABLE public.shipping_transfer (
-   id           			serial,
+   id           			   serial,
    transfer_type      		TEXT,
    transfer_model       	TEXT,
    shipping_transfer_rate	NUMERIC(14,3),
@@ -31,8 +31,8 @@ CREATE TABLE public.shipping_transfer (
 CREATE TABLE public.shipping_info (
    shipping_id           		BIGINT,
    vendor_id      				BIGINT,
-   payment_amount               NUMERIC(14,2),
-   shipping_plan_datetime       TIMESTAMP,
+   payment_amount             NUMERIC(14,2),
+   shipping_plan_datetime     TIMESTAMP,
    shipping_transfer_id  		BIGINT,
    shipping_agreement_id  		BIGINT,
    shipping_country_rate_id  	BIGINT,
@@ -45,7 +45,7 @@ CREATE TABLE public.shipping_status  (
    shipping_id           				BIGINT,
    status               				TEXT,
    state               					TEXT,
-   shipping_start_fact_datetime       	TIMESTAMP,
-   shipping_end_fact_datetime       	TIMESTAMP,
+   shipping_start_fact_datetime     TIMESTAMP,
+   shipping_end_fact_datetime       TIMESTAMP,
    PRIMARY KEY (shipping_id)
 );
